@@ -13,13 +13,16 @@ Here are the basic requirements to complete these walkthroughs using ArcMap 10.6
 * ArcMap 10.6.x (with necessary extension access, e. g. Spatial Analyst)
 * ArcObjects SDK (.NET) 10.6 (depreciated, must request download by using a My ESRI account with proper credentials) 
 
+## Basic Instructions
+- [ ] Describe the usage of the cs files 
+
 ## Troubleshooting 
 - [ ] Add short write-up on some troubleshooting experiences
 
 ## Selected Resources
 Here are links to some of the resources that were used to complete the walkthroughs:
 * [Building add-ins for ArcGIS Desktop (ArcObjects .NET 10.8 SDK)](https://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#CustomizingArcGISDesktopUsingAdd-Ins.htm)
-- [ ] Add more resources
+- [ ] Add more resources - split by specific walkthrough
 
 ## License
 - [ ] Refer to license file for information
