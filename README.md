@@ -2,7 +2,7 @@
 ## General Information
 This repository hosts my solutions to the ArcObjects .NET 10.8 SDK walkthroughs. The solutions were created using the ArcObjects .NET *10.6* SDK, which works similarly enough to the 10.8 SDK. You can find all of the walkthroughs [here](https://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#welcome.htm) within the online help documentation.
 
-The solutions will include the resulting .esriAddIn files and the CSharp code used to generate the .esriAddIn files. The walkthroughs provided through ESRI should provide enough information to show how the .esriAddIn file is generated and how to use the add in inside of ArcMap. Refer to the [first walkthrough](https://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#WalthroughBuildingCustomUIElementsUsingAdd-Ins.htm) for an extended example.
+The solutions will include the resulting .esriAddIn files and the CSharp code used to generate the .esriAddIn files. The walkthroughs provided through ESRI should provide enough information to show how the .esriAddIn file is generated and how to use the add-in inside of ArcMap. Refer to the [first walkthrough](https://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#WalthroughBuildingCustomUIElementsUsingAdd-Ins.htm) for an extended example.
 
 This is an ongoing project. More solutions to walkthroughs will be added to this repository along the way.
 
