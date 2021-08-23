@@ -39,7 +39,7 @@ Here are links to some of the resources that were used to complete the walkthrou
 
 Here are the links to the individual walkthrough tutorials completed so far:
 * [Walkthrough1 - Building custom UI elements using add-ins (ArcObjects .NET 10.8 SDK](https://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#WalthroughBuildingCustomUIElementsUsingAdd-Ins.htm)
-* [Walkthrough2: Building editor extensions using add-ins (ArcObjects .NET 10.8 SDK)](https://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#WalkthroughBuildingEditorExtensionsUsingAdd-Ins.htm)
+* [Walkthrough2 - Building editor extensions using add-ins (ArcObjects .NET 10.8 SDK)](https://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#WalkthroughBuildingEditorExtensionsUsingAdd-Ins.htm)
 
 Data used for testing came from the following link:
 * [United States Census Bureau](https://www.census.gov/geographies/mapping-files.html)
