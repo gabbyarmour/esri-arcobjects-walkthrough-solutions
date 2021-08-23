@@ -49,7 +49,7 @@ Here is a link to the ESRI ArcGIS Pro SDK Community Samples Github:
 
 **Note: The ArcGIS Pro 2.8 SDK is different from ArcObjects SDK (.NET) 10.6. Both have different requirements. Consult the developer documentation provided by ESRI to use the ArcGIS Pro 2.8 SDK. Click [here](https://pro.arcgis.com/en/pro-app/latest/sdk/) to link to the documentation for ArcGIS Pro 2.8 SDK. (Credentials to view documentation may be required.)**
 
-## License
+## Licensing
 Copyright 2021 galacticgerbil
 
 Licensed under the Apache License, Version 2.0 (the "License");
