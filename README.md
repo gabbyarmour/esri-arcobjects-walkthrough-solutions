@@ -14,13 +14,22 @@ Here are the basic requirements to complete these walkthroughs using ArcMap 10.6
 * ArcObjects SDK (.NET) 10.6 (depreciated, must request download by using a My ESRI account with proper credentials) 
 
 ## Basic Instructions
-- [ ] Describe the usage of the cs files 
+- [ ] Describe the usage of the cs files
+How to use my solutions:
+1. Create an Add-In Project by following the instructions of the first walkthrough
+2. Copy/Paste CS code provided in walkthroughs
+3. Build solution in VS 2017
+4. Click Start in VS 2017 to open ArcMap 10.6
+
+Note: Use the walkthrough instructions to build your own. The troubleshooting section will help with doing this.
 
 ## Troubleshooting 
 - [ ] Add short write-up on some troubleshooting experiences
 
 The following are examples of some troubleshooting that was done while working through these walkthroughs:
-1. ArcObjects snippets have to be copied to another folder and added for usage in the Code Snippets Manager inside of Visual Studio 2017. 
+1. ArcObjects snippets have to be copied to another folder and added for usage in the Code Snippets Manager inside of Visual Studio 2017.
+2. Set interop to false - https://gis.stackexchange.com/questions/298043/setting-embed-interop-types-in-arcobjects-to-true-or-false
+3. Set Debug - https://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#HowtoDebugAdd-Ins.htm
 
 ## Selected Resources
 Here are links to some of the resources that were used to complete the walkthroughs:
