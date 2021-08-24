@@ -29,7 +29,7 @@ The following are examples of some troubleshooting that was done while working t
 
   - Copy the ArcObjects Snippet folder (Common Path: C:\Program Files (x86)\ArcGIS\DeveloperKit10.6\Snippets\CSharp\):
   <p align="left">
-  <img src="Image of ArcObjects Snippet Folder](https://github.com/gabbyarmour/esri-arcobjects-walkthrough-solutions/blob/main/Img/FolderToCopy.png"> 
+  <img src="https://github.com/gabbyarmour/esri-arcobjects-walkthrough-solutions/blob/main/Img/FolderToCopy.png"> 
   </p>
   
   - Paste and Rename the ArcObjects Snippet folder (Common Path: C:\Program Files (x86)\ArcGIS\DeveloperKit10.6\Snippets\):
