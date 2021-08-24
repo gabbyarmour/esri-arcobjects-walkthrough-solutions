@@ -62,7 +62,7 @@ namespace AddInEditorExtension
         }
 
         //Invoked when a feature is created or modified.
-        void Events_OnCreateChangeFeature(ESRI.ArcGIS.Geodatabase.IObject obj)
+        void Events_OnCreateChangeFeature(IObject obj)
         {
             IFeature inFeature = (IFeature)obj;
             if (inFeature.Class is IValidation)
@@ -74,12 +74,12 @@ namespace AddInEditorExtension
                 //Report validation result.
                 if (!bIsvalid)
                 {
-                    System.Windows.Forms.MessageBox.Show("Invalid Feature\n\n" +
+                    MessageBox.Show("Invalid Feature\n\n" +
                         errorMessage);
                 }
                 else
                 {
-                    System.Windows.Forms.MessageBox.Show("Valid Feature");
+                    MessageBox.Show("Valid Feature");
                 }
             }
         }
@@ -130,5 +130,7 @@ namespace AddInEditorExtension
         #endregion
 
     }
-
 }
+
+
+// Note: Most of this code had already been generated. It just needs to be put together.
