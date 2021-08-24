@@ -24,12 +24,43 @@ How to use my solutions:
 Note: Use the walkthrough instructions to build your own. The troubleshooting section will help with doing this.
 
 ## Troubleshooting 
-- [ ] Add short write-up on some troubleshooting experiences
-
 The following are examples of some troubleshooting that was done while working through these walkthroughs:
-1. ArcObjects snippets have to be copied to another folder and added for usage in the Code Snippets Manager inside of Visual Studio 2017.
-2. Set interop to false - https://gis.stackexchange.com/questions/298043/setting-embed-interop-types-in-arcobjects-to-true-or-false
-3. Set Debug - https://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#HowtoDebugAdd-Ins.htm
+
+* ArcObjects Snippets have to be copied to another folder to be added for usage in the Code Snippets Manager inside of Visual Studio 2017:
+
+  - Copy the ArcObjects Snippet folder (Common Path: C:\Program Files (x86)\ArcGIS\DeveloperKit10.6\Snippets\CSharp\):
+  ![Image of ArcObjects Snippet Folder](https://github.com/gabbyarmour/esri-arcobjects-walkthrough-solutions/blob/main/Img/FolderToCopy.png) 
+  
+  - Paste and Rename the ArcObjects Snippet folder (Common Path: C:\Program Files (x86)\ArcGIS\DeveloperKit10.6\Snippets\):
+  ![Image of Renamed ArcObjects Snippet Folder](https://github.com/gabbyarmour/esri-arcobjects-walkthrough-solutions/blob/main/Img/RenamedCopiedArcObjects.png)
+  
+  - Open the Code Snippet Manager inside of Visual Studio 2017 (Tools > Code Snippet Manager):
+  ![Image of the Code Snippet Manager](https://github.com/gabbyarmour/esri-arcobjects-walkthrough-solutions/blob/main/Img/CodeSnippetManager.png)
+  
+  - Locate the Add button inside of the Code Snippet Manager to add the new ArcObjects Folder (ArcObjectsCS):
+  ![Image of the Add Button](https://github.com/gabbyarmour/esri-arcobjects-walkthrough-solutions/blob/main/Img/AddCodeSnippetManager.png)
+  
+  - Add the new ArcObjects Folder (ArcObjectsCS) and click OK:
+  ![Image of ArcObjectsCS](https://github.com/gabbyarmour/esri-arcobjects-walkthrough-solutions/blob/main/Img/AddArcObjectsCS.png)
+  ![Image of ArcObjectsCS added to the Code Snippet Manager](https://github.com/gabbyarmour/esri-arcobjects-walkthrough-solutions/blob/main/Img/OKAddCodeSnippetManager.png)
+  
+  - Right-click inside of the code (CS file) to starting using the Insert Snippet option when prompted by the walkthroughs:
+  ![Image of Using Insert Snippet](https://github.com/gabbyarmour/esri-arcobjects-walkthrough-solutions/blob/main/Img/InsertSnippetAsSuggested.png)
+   
+   
+* ArcGIS provides PIAs (Primary Interop Assemblies). When adding an ArcGIS reference to an add-in solution, the 'Embed Interop Types' must be set to false.
+
+  - [Link](https://gis.stackexchange.com/questions/298043/setting-embed-interop-types-in-arcobjects-to-true-or-false) to explanation.
+
+  - Screenshots of how to access reference properties:
+  <!-- Had to use HTML to properly align the images in this portion. -->
+  <p align="left">
+  <img src="https://github.com/gabbyarmour/esri-arcobjects-walkthrough-solutions/blob/main/Img/EnterReferenceProperties.png">
+  <img src="https://github.com/gabbyarmour/esri-arcobjects-walkthrough-solutions/blob/main/Img/SetToFalse.png">
+  </p>
+
+
+* Set Debug - https://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#HowtoDebugAdd-Ins.htm
 
 ## Selected Resources
 Here are links to some of the resources that were used to complete the walkthroughs:
