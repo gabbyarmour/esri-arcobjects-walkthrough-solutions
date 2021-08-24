@@ -26,24 +26,24 @@ namespace AddInCustomUIElements
         }
 
         #region
-        public void ZoomToActiveLayerInTOC(ESRI.ArcGIS.ArcMapUI.IMxDocument mxDocument)
+        public void ZoomToActiveLayerInTOC(IMxDocument mxDocument)
         {
             if (mxDocument == null)
             {
                 return;
             }
-            ESRI.ArcGIS.Carto.IActiveView activeView = mxDocument.ActiveView;
+            IActiveView activeView = mxDocument.ActiveView;
 
             // Get the TOC
-            ESRI.ArcGIS.ArcMapUI.IContentsView IContentsView = mxDocument.CurrentContentsView;
+            IContentsView IContentsView = mxDocument.CurrentContentsView;
 
             // Get the selected layer
             System.Object selectedItem = IContentsView.SelectedItem;
-            if (!(selectedItem is ESRI.ArcGIS.Carto.ILayer))
+            if (!(selectedItem is ILayer))
             {
                 return;
             }
-            ESRI.ArcGIS.Carto.ILayer layer = selectedItem as ESRI.ArcGIS.Carto.ILayer;
+            ILayer layer = selectedItem as ILayer;
 
 
             // Zoom to the extent of the layer and refresh the map
@@ -52,5 +52,6 @@ namespace AddInCustomUIElements
         }
         #endregion
     }
-
 }
+
+// Note: Most of this code has already been generated. It just needs to be put together.
