@@ -73,6 +73,7 @@ The following are examples of some troubleshooting that was done while working t
 * When configuring the solution, the debug external program may need to be reset to point to the appropriate version of ArcMap.exe.
 
   - [Link](https://desktop.arcgis.com/en/arcobjects/latest/net/webframe.htm#HowtoDebugAdd-Ins.htm) to explanation.
+  <!-- Add Screenshot Explanation -->
 
 ## Selected Resources
 Here are links to some of the resources that were used to complete the walkthroughs:
