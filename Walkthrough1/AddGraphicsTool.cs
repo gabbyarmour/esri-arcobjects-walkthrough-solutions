@@ -36,45 +36,45 @@ namespace AddInCustomUIElements
         }
 
         #region
-        public void AddGraphicToMap(ESRI.ArcGIS.Carto.IMap map, ESRI.ArcGIS.Geometry.IGeometry geometry, ESRI.ArcGIS.Display.IRgbColor rgbColor, ESRI.ArcGIS.Display.IRgbColor outlineRgbColor)
+        public void AddGraphicToMap(IMap map, IGeometry geometry, IRgbColor rgbColor, IRgbColor outlineRgbColor)
         {
-            ESRI.ArcGIS.Carto.IGraphicsContainer graphicsContainer = (ESRI.ArcGIS.Carto.IGraphicsContainer)map; // Explicit Cast
-            ESRI.ArcGIS.Carto.IElement element = null;
-            if ((geometry.GeometryType) == ESRI.ArcGIS.Geometry.esriGeometryType.esriGeometryPoint)
+            IGraphicsContainer graphicsContainer = (IGraphicsContainer)map; // Explicit Cast
+            IElement element = null;
+            if ((geometry.GeometryType) == esriGeometryType.esriGeometryPoint)
             {
                 // Marker symbols
-                ESRI.ArcGIS.Display.ISimpleMarkerSymbol simpleMarkerSymbol = new ESRI.ArcGIS.Display.SimpleMarkerSymbolClass();
+                ISimpleMarkerSymbol simpleMarkerSymbol = new SimpleMarkerSymbolClass();
                 simpleMarkerSymbol.Color = rgbColor;
                 simpleMarkerSymbol.Outline = true;
                 simpleMarkerSymbol.OutlineColor = outlineRgbColor;
                 simpleMarkerSymbol.Size = 15;
-                simpleMarkerSymbol.Style = ESRI.ArcGIS.Display.esriSimpleMarkerStyle.esriSMSCircle;
+                simpleMarkerSymbol.Style = esriSimpleMarkerStyle.esriSMSCircle;
 
-                ESRI.ArcGIS.Carto.IMarkerElement markerElement = new ESRI.ArcGIS.Carto.MarkerElementClass();
+                IMarkerElement markerElement = new MarkerElementClass();
                 markerElement.Symbol = simpleMarkerSymbol;
-                element = (ESRI.ArcGIS.Carto.IElement)markerElement; // Explicit Cast
+                element = (IElement)markerElement; // Explicit Cast
             }
-            else if ((geometry.GeometryType) == ESRI.ArcGIS.Geometry.esriGeometryType.esriGeometryPolyline)
+            else if ((geometry.GeometryType) == esriGeometryType.esriGeometryPolyline)
             {
                 //  Line elements
-                ESRI.ArcGIS.Display.ISimpleLineSymbol simpleLineSymbol = new ESRI.ArcGIS.Display.SimpleLineSymbolClass();
+                ISimpleLineSymbol simpleLineSymbol = new SimpleLineSymbolClass();
                 simpleLineSymbol.Color = rgbColor;
-                simpleLineSymbol.Style = ESRI.ArcGIS.Display.esriSimpleLineStyle.esriSLSSolid;
+                simpleLineSymbol.Style = esriSimpleLineStyle.esriSLSSolid;
                 simpleLineSymbol.Width = 5;
 
-                ESRI.ArcGIS.Carto.ILineElement lineElement = new ESRI.ArcGIS.Carto.LineElementClass();
+                ILineElement lineElement = new LineElementClass();
                 lineElement.Symbol = simpleLineSymbol;
-                element = (ESRI.ArcGIS.Carto.IElement)lineElement; // Explicit Cast
+                element = (IElement)lineElement; // Explicit Cast
             }
-            else if ((geometry.GeometryType) == ESRI.ArcGIS.Geometry.esriGeometryType.esriGeometryPolygon)
+            else if ((geometry.GeometryType) == esriGeometryType.esriGeometryPolygon)
             {
                 // Polygon elements
-                ESRI.ArcGIS.Display.ISimpleFillSymbol simpleFillSymbol = new ESRI.ArcGIS.Display.SimpleFillSymbolClass();
+                ISimpleFillSymbol simpleFillSymbol = new SimpleFillSymbolClass();
                 simpleFillSymbol.Color = rgbColor;
-                simpleFillSymbol.Style = ESRI.ArcGIS.Display.esriSimpleFillStyle.esriSFSForwardDiagonal;
-                ESRI.ArcGIS.Carto.IFillShapeElement fillShapeElement = new ESRI.ArcGIS.Carto.PolygonElementClass();
+                simpleFillSymbol.Style = esriSimpleFillStyle.esriSFSForwardDiagonal;
+                IFillShapeElement fillShapeElement = new PolygonElementClass();
                 fillShapeElement.Symbol = simpleFillSymbol;
-                element = (ESRI.ArcGIS.Carto.IElement)fillShapeElement; // Explicit Cast
+                element = (IElement)fillShapeElement; // Explicit Cast
             }
             if (!(element == null))
             {
@@ -85,7 +85,7 @@ namespace AddInCustomUIElements
         #endregion
 
         #region
-        public IPolyline GetPolylineFromMouseClicks(ESRI.ArcGIS.Carto.IActiveView activeView)
+        public IPolyline GetPolylineFromMouseClicks(IActiveView activeView)
         {
 
                 IScreenDisplay screenDisplay = activeView.ScreenDisplay;
@@ -101,3 +101,6 @@ namespace AddInCustomUIElements
         #endregion
     }
 }
+
+
+// Note: Most of this code has already been generated. It just needs to be put together.
