@@ -54,4 +54,4 @@ namespace AddInCustomUIElements
     }
 }
 
-// Note: Most of this code has already been generated. It just needs to be put together.
+// Note: Most of this code had already been generated. It just needs to be put together.
